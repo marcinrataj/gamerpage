@@ -64,4 +64,18 @@ header.hero-img .hero-text {
   align-items: center;
   flex-direction: column;
   height: 100%;
+}
+header.hero-img .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url("../img/hero-small.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */
