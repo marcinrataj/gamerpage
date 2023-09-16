@@ -5,6 +5,10 @@
 	padding: 0;
 }
 
+html{
+	scroll-padding-top: 74px;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
@@ -32,7 +36,7 @@ body {
 
 nav {
 	text-transform: uppercase;
-	transition: 0.6s;
+	transition: background-color 0.6s;
 	z-index: 5;
 
 	.navbar-toggler {
@@ -112,6 +116,14 @@ header.hero-img {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
+
+	.aboutus-hover{
+		transition: color .3s;
+	}
+
+	.aboutus-hover:hover{
+		color: $main-color;
+	}
 }
 
 @media (min-width: 768px) {
@@ -128,5 +140,11 @@ header.hero-img {
 @media (min-width: 1200px) {
 	header.hero-img {
 		background-image: url('../img/hero-small.jpg');
+	}
+}
+
+@media (min-width: 992px){
+	html{
+		scroll-padding-top: 72px;
 	}
 }
