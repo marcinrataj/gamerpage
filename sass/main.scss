@@ -64,7 +64,7 @@ nav {
 header.hero-img {
 	position: relative;
 	height: 100vh;
-	background-image: url('../img/hero-big.jpg');
+	background-image: url('../img/hero-small.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -123,6 +123,25 @@ header.hero-img {
 
 	.aboutus-hover:hover{
 		color: $main-color;
+	}
+}
+
+.aboutus-hero{
+	position: relative;
+	background-image: url("../img/technology-small.jpg");
+	background-size: cover;
+	background-position: center;
+	color: $light-gray;
+	z-index: 0;
+
+	.aboutus-shadow{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
 	}
 }
 
