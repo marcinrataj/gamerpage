@@ -5,7 +5,7 @@
 	padding: 0;
 }
 
-html{
+html {
 	scroll-padding-top: 74px;
 }
 
@@ -117,24 +117,24 @@ header.hero-img {
 		font-size: 14px;
 	}
 
-	.aboutus-hover{
-		transition: color .3s;
+	.aboutus-hover {
+		transition: color 0.3s;
 	}
 
-	.aboutus-hover:hover{
+	.aboutus-hover:hover {
 		color: $main-color;
 	}
 }
 
-.aboutus-hero{
+.aboutus-hero {
 	position: relative;
-	background-image: url("../img/technology-small.jpg");
+	background-image: url('../img/technology-small.jpg');
 	background-size: cover;
 	background-position: center;
 	color: $light-gray;
 	z-index: 0;
 
-	.aboutus-shadow{
+	.aboutus-shadow {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -144,36 +144,83 @@ header.hero-img {
 		z-index: -5;
 	}
 
-	.aboutus-hero-item{
+	.aboutus-hero-item {
 		margin: 10px 0;
 
-		i{
+		i {
 			font-size: 36px;
 		}
 
-		.aboutus-hero-title{
+		.aboutus-hero-title {
 			font-size: 24px;
 		}
 	}
 }
 
-.portfolio{
-	.carousel-item{
+.portfolio {
+	.carousel-item {
 		height: 600px;
 	}
 
-	.carousel-caption{
+	.carousel-caption {
 		left: 0;
 		right: 0;
 		padding: 40px 0;
-		background-color: rgba(0, 0, 0, .8);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
-	.carousel-indicators{
-		padding-bottom: 20px;	
+	.carousel-indicators {
+		padding-bottom: 20px;
 	}
 }
+.prices {
+	.price-box {
+		margin: 20px;
+		padding: 30px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+		transition: scale .3s;
 
+		span{
+			font-weight: bold;
+		}
+
+		i{
+			padding: 0 5px;
+			font-size: 24px;
+		}
+		button{
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+	}
+
+	.price-box:hover {
+		scale: 1.05;
+	}
+
+	.price-title {
+		color: $main-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.price-tag{
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	.price-info{
+		margin-top: 30px;
+
+		a{
+			text-decoration: none;
+		}
+	}
+
+
+}
 
 @media (min-width: 768px) {
 	.hero-text {
@@ -192,11 +239,11 @@ header.hero-img {
 	}
 }
 
-@media (min-width: 992px){
-	html{
+@media (min-width: 992px) {
+	html {
 		scroll-padding-top: 72px;
 	}
-	.aboutus-hero{
-		background-image: url("../img/technology-big.jpg");
-}
+	.aboutus-hero {
+		background-image: url('../img/technology-big.jpg');
+	}
 }
