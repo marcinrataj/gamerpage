@@ -11,7 +11,7 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: #e8e8f1;
 }
 
 .blue-text {
@@ -263,6 +263,23 @@ header.hero-img {
 	}		
 	.card:hover {
 		scale: 0.96;
+	}
+}
+
+.achievements-list{
+	i{
+		padding: 10px;
+		font-size: 48px;
+		color: $white;
+		text-shadow: 0 0 5px rgb(0, 0, 0);
+	}
+
+	.achievement-number{
+		font-size: 22px;
+	}
+	.achievement-text{
+		font-size: 13px;
+		text-transform: uppercase;
 	}
 }
 
